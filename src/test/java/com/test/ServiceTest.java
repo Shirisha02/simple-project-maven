@@ -1,16 +1,16 @@
 package com.test;
 
-import static org.junit.Assert.assertFalse;
-import static org.junit.Assert.assertTrue;
+import static org.junit.jupiter.api.Assertions.assertTrue;
 
-import org.junit.jupiter.api.Test;
+import org.junit.Test;
 
 import com.Service;
+
 public class ServiceTest {
     private final Service service = new Service();
 
     @Test
-    void testValidEmails() {
+    public void testValidEmails() {
         assertTrue(service.validateEmail("user@example.com"));
         assertTrue(service.validateEmail("test.email@domain.com"));
         assertTrue(service.validateEmail("name123@company.com"));
