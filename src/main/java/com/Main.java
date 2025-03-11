@@ -1,10 +1,13 @@
 package com;
 
+import com.model.Book;
+
 public class Main {
-	  public static void main(String[] args) {
-	        Service service = new Service();
-	        System.out.println("Testing valid email: " + service.validateEmail("user@example.com"));
-	        System.out.println("Testing invalid email: " + service.validateEmail("userexample.com"));
-	    }
+	public static void main(String[] args) {
+		Book book =new Book();
+		book.setTitle("Complete Java");
+		book.setAuthor("Rubina");
+		System.out.println(book);
+	}
 
 }
